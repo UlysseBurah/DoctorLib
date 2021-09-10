@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/signIn.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/warning.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class = "body">
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <div class="signup" id="signup">
+            <h1>Sign In, Doctor</h1>
+            <form action="../LoginDoctorServlet" method="POST">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="input-box"
+                  placeholder="Your Email"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  class="input-box"
+                  placeholder="Your Password"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input onclick="window.location.href = 'index.html';" type="submit" class="btn btn-primary" value="Log In" />
+              </div>
+              <p>
+                Regular User ?<a href="login.html">Connect here.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="index.html" id="logo"
+        ><img
+          class="logo"
+          src="../constants/images/pngfind.com-medical-png-832303.png"
+      /></a>
+      
+    </section>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+  </body>
+</html>

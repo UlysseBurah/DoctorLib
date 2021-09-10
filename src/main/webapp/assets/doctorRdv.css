@@ -1,0 +1,153 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  font-family: Hind, San Francisco, Roboto, Arial, sans-serif;
+}
+
+a {
+  color: #ec3655;
+}
+h1 {
+  color: white !important;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  font-family: Hind, San Francisco, Roboto, Arial, sans-serif;
+}
+
+.body {
+  width: 100%;
+  background-color: #3d81b9;
+  background-image: url("../constants/images/background2.png");
+  background-size: 679px 379px;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+/* Style the search field */
+form.delete input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.delete button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.delete button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#results {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 5px;
+}
+#header {
+  background-color: gray;
+  width: 100%;
+}
+#results tr,
+#results td,
+#results th {
+  padding: 8px;
+  background-color: gray;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(71, 147, 227, 1);
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  padding: 30px 0;
+}
+
+.fl-table {
+  border-radius: 15px !important;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}	
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4fc3a1;
+}
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+/* Responsive */

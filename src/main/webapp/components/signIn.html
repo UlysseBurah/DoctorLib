@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/signIn.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/warning.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  <body class = "body">
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <div class="signup" id="signup">
+            <h1>Create Account</h1>
+            <form onSubmit="insert(); return false;" action="../InsertDBForm" method="POST">
+              <div class="omo">
+                <input
+                  type="firstname"
+                  id="firstname"
+                  name="firstname"
+                  class="input-box"
+                  placeholder="Your Firstname"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="lastname"
+                  name="lastname"
+                  id="lastname"
+                  class="input-box"
+                  placeholder="Your Lastname"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input-box"
+                  placeholder="Your Email"
+                  value=""
+                />
+              </div>
+              
+              <div class="form-group">
+                <input
+                  type="mobile"
+                  id="mobile"
+                  name="mobile"
+                  class="input-box"
+                  placeholder="Your Mobile"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input-box"
+                  placeholder="Your Password"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirmPass"
+                  class="input-box"
+                  placeholder="Confirm Password"
+                  value=""
+                />
+              </div>
+              <div class="form-group">
+                <input
+                	
+                  type="submit"
+                  class="btn btn-primary"
+                  value="Create Account"
+                  id="sub"
+                />
+              </div>
+              <p>Already have an account ?<a href="login.html">Log In.</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="index.html" id="logo"
+      ><img
+        class="logo"
+        src="../constants/images/pngfind.com-medical-png-832303.png"
+    /></a>
+    </section>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="warning">Some text in the Modal..</p>
+      </div>
+    </div>
+    <div id = "modal2" class="modal">
+      <div class="modal-contentdatas">
+      <span class="close">&times;</span>
+    </div>
+    </div>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+    </div>
+  </body>
+   <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"
+  ></script>
+  
+  <script src="../assets/user.js"></script>
+  <script src="../assets/blindageFormLogin.js"></script>
+  <script src="../assets/blindageFormSignIn.js"></script>
+</html>

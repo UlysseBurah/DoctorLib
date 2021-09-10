@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/signIn.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/warning.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class = "body">
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <div class="signup" id="signup">
+            <h1>Sign In, User</h1>
+            <form onSubmit="insert()" action="../LoginServlet" method="POST">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="input-box"
+                  placeholder="Your Email"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  class="input-box"
+                  placeholder="Your Password"
+                  value=""
+                />
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input onclick="window.location.href = 'index.html';" type="submit" class="btn btn-primary" value="Log In" />
+              </div>
+              <p>
+                Don't have an account ?<a href="signIn.html">Create one.</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="index.html" id="logo"
+        ><img
+          class="logo"
+          src="../constants/images/pngfind.com-medical-png-832303.png"
+      /></a>
+      <a class="doctorlogin" href="doctorLogin.html" id="doctorlogin">You're a Doctor? Login Here</a>
+    </section>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+  </body>
+  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+    integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"
+    integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="../assets/user.js"></script>
+  <script src="../assets/blindageFormLogin.js"></script>
+</html>

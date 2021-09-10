@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/signIn.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/warning.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class = "body">
+    <header></header>
+    <section>
+      <div class="hero">
+        <div class="background">
+          <div class="signup" id="signup">
+            <h1>Booking</h1>
+            
+            <form action="../BookingServlet" method="POST">
+            
+              <h5 id="bdate">Select the date of the rdv</h5>
+              <div class="form-group-date">
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  value="2020-07-10"
+                  min="2020-07-07"
+                  max="2020-12-31"
+                />
+              
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+              
+                <label for="heure">Choose a time for your meeting:</label>
+
+				<input 
+					type="time" 
+					id="heure" name="heure"
+					min="09:00" max="18:00" required>
+				
+				<small>Office hours are 9am to 6pm</small>
+                <span style="color: red" class="help-block"></span>
+              </div>
+              <div class="form-group">
+                <input onclick="window.location.href = 'index.html';" type="submit" class="btn btn-primary" value="Book" />
+              </div>
+              <p>
+                Already have a RDV ?<a href="rdvDisplay.jsp">My RDV</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="logo" href="index.html" id="logo"
+        ><img
+          class="logo"
+          src="../constants/images/pngfind.com-medical-png-832303.png"
+      /></a>
+    </section>
+    <div class = "datas">
+    <table id = "datasTable">
+     </table>
+  </body>
+</html>
